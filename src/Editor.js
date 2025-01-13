@@ -1,14 +1,8 @@
-import { useState } from "react";
-
-export default function Editor() {
-  const [text, setText] = useState("");
+export default function Editor({ text, setText }) {
   return (
-    <div>
-      <textarea
-        id="editor"
-        onChange={(event) => setText(event.target.value)}
-      ></textarea>
-      {text}
-    </div>
+    <textarea
+      id="editor"
+      onChange={(event) => setText(event.target.value)}
+    ></textarea>
   );
 }

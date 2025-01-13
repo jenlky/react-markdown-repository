@@ -1,3 +1,3 @@
-export default function Previewer() {
-  return <div id="previewer"></div>;
+export default function Previewer({ text }) {
+  return <div id="previewer">{text}</div>;
 }
