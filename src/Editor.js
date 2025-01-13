@@ -6,7 +6,7 @@ export default function Editor() {
     <div>
       <textarea
         id="editor"
-        onChange={() => setText(event.target.value)}
+        onChange={(event) => setText(event.target.value)}
       ></textarea>
       {text}
     </div>
