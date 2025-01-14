@@ -3,6 +3,6 @@ export default function Editor({ text, setText }) {
     <textarea
       id="editor"
       onChange={(event) => setText(event.target.value)}
-    ></textarea>
+    >{text}</textarea>
   );
 }
